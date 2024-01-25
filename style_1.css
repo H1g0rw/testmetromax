@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+*{
+    /* Style reset */
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*CSS var*/
+    --primeira-cor: #ffffff;
+    --segunda-cor: #f2f2f2;
+    --terceira-cor: #5c5b5b;
+    --quarta-cor: #0000ff;
+    --quinta-cor: #000000;
+    --sexta-cor: #1155cc;
+
+    --font-principal: 'Comfortaa', cursive;
+}
+
+body{
+    /*Body Style*/
+    background-color: var(--primeira-cor);
+    color: var(--quinta-cor);
+    box-sizing: border-box;
+}
+
+.container_header{
+    /*Header style*/
+    background-color: var(--segunda-cor);
+    padding: 2% 0% 2% 20%;
+}
+
+.Logo{
+    /*Logo Style*/
+    width: 20rem;
+    max-width: 100%;
+}
+
+.container_main{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 20%;
+    gap: 6.25rem;
+    text-align: center;
+}
+
+.first_title{
+    margin-top: 2.5rem;
+    font-family: var(--font-principal);
+    color: var(--terceira-cor);
+    font-weight: 300;
+    line-height: 48px;
+    font-size: 1.5rem;
+}
+
+.first_strong{
+    color: var(--sexta-cor);
+    font-size: 1.5rem;
+    font-family: var(--font-principal);
+}
+
+.container_section_0{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.catalog_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text_for_catalog{
+    font-size: 1.5rem;
+    font-family: var(--font-principal);
+    color: var(--quinta-cor);
+}
+
+.link{
+    border: 3px solid #0000ff;
+    padding: 1%;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    width: 200px;
+    color: var(--quinta-cor);
+    font-family: var(--font-principal);
+    box-shadow: 5px 5px 5px 0px rgb(49, 48, 48);
+}
+
+.link:hover{
+    background-color: #4545da49;
+}
+
+.company_services{
+    width: 50%;
+    height: 505px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.clients_title{
+    font-family: var(--font-principal);
+}
+
+.photo_company_row1{
+    display: flex;
+    gap: 4.375rem;
+}
+
+.photo_company_row2{
+    display: flex;
+    gap: 4.375rem;
+}
+
+.photo_company_row3{
+    display: flex;
+    gap: 4.375rem;
+}
+
+.logo_client{
+    width: 6.875rem;
+    border-radius: 4%;
+}
+
+#slider-container {
+    width: 50%; /* Reduzi a largura do slider para 40% da largura da tela */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-y;
+  }
+
+  #slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .img_slider {
+    width: 100%; /* Largura responsiva */
+    height: 300px; /* Altura responsiva */
+    max-width: 100%;
+    
+  }
+
+  #prevBtn, #nextBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  #nextBtn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  #prevBtn:hover, #nextBtn:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+
+  .content {
+    padding: 20px;
+    height: 1500px; /* Apenas para criar um espaço para rolar na página */
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.icon_wpp {
+    width: 50px; /* Tamanho do ícone - ajuste conforme necessário */
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.container_section_1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.slider_title{
+    color: var(--terceira-cor);
+    font-family: var(--font-principal);
+}
+
+.container_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer_title{
+    font-family: var(--font-principal);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.div_links{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.adress{
+    width: 100%;
+    font-family: var(--font-principal);
+    text-align: center;
+}
+
+.adress_company{
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.links_number{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.number{
+    font-size: 1.25rem;
+    font-family: var(--font-principal);
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.wpplink{
+    width: 110px;
+    border-radius: 50%;
+
+}
+
+.instalink{
+    width: 110px;
+}
+
+@media(max-width:596px){
+    .container_main{
+        align-items: center;
+    }
+    .Logo{
+        /*Logo Style*/
+        width: 220px;
+        max-width: 100%;
+    }
+    .first_title{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .first_strong{
+        font-size: 20px;
+    }
+    .link{
+        font-size: 20px;
+        width: 100px;
+    }
+    .text_for_catalog{
+        font-size: 20px;
+    }
+
+    .company_services{
+        width: 100%;
+    }
+    .clients_title{
+        font-size: 20px;
+    }
+    .container_section_1{
+        margin-top: 60px;
+    }
+    .photo_company_row1{
+        gap: 10px;
+    }
+    .photo_company_row2{
+        gap: 10px;
+    }
+    .photo_company_row3{
+        gap: 10px;
+    }
+
+    #slider-container {
+        width: 300px; /* Reduzi a largura do slider para 40% da largura da tela */
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        touch-action: pan-y;
+    }
+
+    .footer_title{
+        font-size: 20px;
+    }
+
+    .adress{
+        width: 90%;
+        font-family: var(--font-principal);
+        text-align: center;
+        margin: auto;
+    }
+    
+    .adress_company{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .number{
+        font-size: .9375rem;
+    }
+
+    .wpplink{
+        width: 70px;
+        border-radius: 50%;
+    
+    }
+    .links{
+        flex-direction: row-reverse;
+    }
+    .instalink{
+        width: 70px;
+    }
+}
